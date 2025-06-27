@@ -1,0 +1,13 @@
+#cloud-config
+package_update: true
+packages:
+  - docker.io
+  - git
+
+runcmd:
+  - systemctl start docker
+  - systemctl enable docker
+  - usermod -aG docker ubuntu
+  - su - ubuntu -c "git clone https://github.com/NishitaNJ/devops_assignment.git"
+  - su - ubuntu -c "cd devops-assignment && docker build -t flask-ec2-app . > build.log 2>&1"
+  - su - ubuntu -c "docker run -d -p 5000:5000 flask-ec2-app"
