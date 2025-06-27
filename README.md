@@ -35,7 +35,7 @@ docker run -d -p 5000:5000 flask-ec2-app
 
 Visit: [http://localhost:5000](http://localhost:5000)
 
-![Localhost output](<Screenshot (384).png>)
+![Localhost output](<Screenshots/localhost_output.png>)
 
 ---
 
@@ -63,25 +63,21 @@ docker run -d -p 5000:5000 flask-ec2-app
 
 Visit: `http://<EC2-PUBLIC-IP>:5000`
 
-![EC2 Browser output](<Screenshot (385).png>)
+![EC2](<Screenshots/EC2-browser-output.png>)
 
-### 📸 Screenshot 1: EC2 instance running with public IP (AWS Console)
+### Screenshot: EC2 instance running with public IP (AWS Console)
 
-![EC2 Instance running in AWS Console](<Screenshot (405)-1.png>)
+![EC2](<Screenshots/EC2-instance-aws-console.png>)
 
-### 📸 Screenshot 2: SSH terminal with docker build & run output
+### Screenshot: SSH terminal with docker build & run output
 
-![Local GitBash](<Screenshot (388).png>)
+![Local GitBash](<Screenshots/Local-gitbash.png>)
 
-![Local Git Bash](<Screenshot (386).png>)
-
-### 📸 Screenshot 3: Browser showing the Flask app from EC2 IP
-
-
+![Local Git Bash](<Screenshots/local-gitbash.png>)
 
 ---
 
-## ✨ Bonus Task 1: cloud-init Automation
+## Bonus Task 1: cloud-init Automation
 
 ### cloud-init.yaml
 
@@ -105,13 +101,13 @@ runcmd:
 * Paste the script under **Advanced details > User Data**
 * App runs at boot without SSH
 
-![Cloud-init Instance Running](<Screenshot (391).png>)
+![Cloud-init](<Screenshots/cloud-init-instance.png>)
 
-![Cloud-init browser output](<Screenshot (392).png>)
+![Cloud-init](<Screenshots/cloud-init-browser-output.png>)
 
 ---
 
-## ✨ Bonus Task 2: IAM Role for S3 Access
+## Bonus Task 2: IAM Role for S3 Access
 
 ### IAM Role Setup
 
@@ -129,23 +125,23 @@ sudo ./aws/install
 aws s3 ls
 ```
 
-### 📸 Screenshot 6: IAM role attached to EC2
+### Screenshot: IAM role attached to EC2
 
-![Creating IAM Role](<Screenshot (393).png>)
+![IAM Role](<Screenshots/creating-IAM-role.png>)
 
-![Created IAM Role](<Screenshot (394).png>)
+![IAM Role](<Screenshots/IAM-role-created.png>)
 
-![Selecting IAM role in the instance](<Screenshot (396).png>)
+![IAM Role](<Screenshots/selecting-IAM-in-instance.png>)
 
-![IAM Role successfully attached](<Screenshot (397).png>)
+![IAM Role](<Screenshots/IAM-successfully-attached.png>)
 
-### 📸 Screenshot 7: `aws s3 ls` command working without keys
+### Screenshot: `aws s3 ls` command working without keys
 
-![AWS S3 ls](<Screenshot (398).png>)
+![AWS S3 ls](<Screenshots/aws-ls.png>)
 
 ---
 
-## ✨ Bonus Task 3: deploy.sh Script
+## Bonus Task 3: deploy.sh Script
 
 ### Purpose
 
@@ -160,7 +156,7 @@ Automates clone → build → run on any server with Docker + Git
 docker ps -q --filter "publish=5000" | xargs -r docker stop
 
 # Clone repo
-if [ ! -d "devops-assignment" ]; then
+if [ ! -d "devops_assignment" ]; then
     git clone https://github.com/NishitaNJ/devops_assignment.git
 else
     cd devops_assignment && git pull && cd ..
@@ -171,17 +167,17 @@ docker build -t flask-ec2-app .
 docker run -d -p 5000:5000 flask-ec2-app
 ```
 
-### 📸 Screenshot 8: Terminal running deploy.sh script successfully
+### Screenshot 8: Terminal running deploy.sh script successfully
 
-![deploy.sh output](<Screenshot (401).png>)
+![deploy.sh](<Screenshots/deploy-output1.png>)
 
-![deploy.sh](<Screenshot (402).png>)
+![deploy.sh](<Screenshots/deploy-output2.png>)
 
-![deploy.sh](<Screenshot (403).png>)
+![deploy.sh](<Screenshots/deploy-output3.png>)
 
-### 📸 Screenshot 9: App accessed after deploy script execution
+### Screenshot 9: App accessed after deploy script execution
 
-![App accessed successfully](<Screenshot (404).png>)
+![App accessed successfully](<Screenshots/app-access.png>)
 
 ---
 
@@ -191,9 +187,9 @@ All EC2 instances used were stopped
 
 ---
 
-## 🙋‍♀️ Author
+## Author
 
-**Your Name**
+**Nishita Joshi**
 GitHub: [https://github.com/NishitaNJ](https://github.com/NishitaNJ)
 
 ---
