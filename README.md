@@ -67,7 +67,7 @@ Visit: `http://<EC2-PUBLIC-IP>:5000`
 
 ### Screenshot: EC2 instance running with public IP (AWS Console)
 
-![EC2](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(405)-1.png>)
+![EC2](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(405).png>)
 
 ### Screenshot: SSH terminal with docker build & run output
 
@@ -167,7 +167,7 @@ docker build -t flask-ec2-app .
 docker run -d -p 5000:5000 flask-ec2-app
 ```
 
-### Screenshot 8: Terminal running deploy.sh script successfully
+### Screenshot: Terminal running deploy.sh script successfully
 
 ![deploy.sh](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(401).png>)
 
@@ -175,7 +175,7 @@ docker run -d -p 5000:5000 flask-ec2-app
 
 ![deploy.sh](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(403).png>)
 
-### Screenshot 9: App accessed after deploy script execution
+### Screenshot: App accessed after deploy script execution
 
 ![App accessed successfully](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(404).png>)
 
