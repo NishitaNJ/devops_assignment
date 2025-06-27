@@ -35,7 +35,7 @@ docker run -d -p 5000:5000 flask-ec2-app
 
 Visit: [http://localhost:5000](http://localhost:5000)
 
-![Localhost output](<Screenshots/localhost_output.png>)
+![Localhost output](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(384).png>)
 
 ---
 
@@ -63,17 +63,17 @@ docker run -d -p 5000:5000 flask-ec2-app
 
 Visit: `http://<EC2-PUBLIC-IP>:5000`
 
-![EC2](<Screenshots/EC2-browser-output.png>)
+![EC2](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(385).png>)
 
 ### Screenshot: EC2 instance running with public IP (AWS Console)
 
-![EC2](<Screenshots/EC2-instance-aws-console.png>)
+![EC2](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(405)-1.png>)
 
 ### Screenshot: SSH terminal with docker build & run output
 
-![Local GitBash](<Screenshots/Local-gitbash.png>)
+![Local GitBash](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(388).png>)
 
-![Local Git Bash](<Screenshots/local-gitbash.png>)
+![Local Git Bash](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(386).png>)
 
 ---
 
@@ -101,9 +101,9 @@ runcmd:
 * Paste the script under **Advanced details > User Data**
 * App runs at boot without SSH
 
-![Cloud-init](<Screenshots/cloud-init-instance.png>)
+![Cloud-init](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(391).png>)
 
-![Cloud-init](<Screenshots/cloud-init-browser-output.png>)
+![Cloud-init](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(392).png>)
 
 ---
 
@@ -127,17 +127,17 @@ aws s3 ls
 
 ### Screenshot: IAM role attached to EC2
 
-![IAM Role](<Screenshots/creating-IAM-role.png>)
+![IAM Role](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(393).png>)
 
-![IAM Role](<Screenshots/IAM-role-created.png>)
+![IAM Role](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(394).png>)
 
-![IAM Role](<Screenshots/selecting-IAM-in-instance.png>)
+![IAM Role](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(396).png>)
 
-![IAM Role](<Screenshots/IAM-successfully-attached.png>)
+![IAM Role](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(397).png>)
 
 ### Screenshot: `aws s3 ls` command working without keys
 
-![AWS S3 ls](<Screenshots/aws-ls.png>)
+![AWS S3 ls](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(398).png>)
 
 ---
 
@@ -169,15 +169,15 @@ docker run -d -p 5000:5000 flask-ec2-app
 
 ### Screenshot 8: Terminal running deploy.sh script successfully
 
-![deploy.sh](<Screenshots/deploy-output1.png>)
+![deploy.sh](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(401).png>)
 
-![deploy.sh](<Screenshots/deploy-output2.png>)
+![deploy.sh](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(402).png>)
 
-![deploy.sh](<Screenshots/deploy-output3.png>)
+![deploy.sh](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(403).png>)
 
 ### Screenshot 9: App accessed after deploy script execution
 
-![App accessed successfully](<Screenshots/app-access.png>)
+![App accessed successfully](<https://github.com/NishitaNJ/devops_assignment/blob/main/Screenshots/Screenshot%20(404).png>)
 
 ---
 
